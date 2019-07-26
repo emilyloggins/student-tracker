@@ -6,7 +6,26 @@ namespace student_tracker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Exercise dictionaries = new Exercise
+            {
+                Name = "Dictionaries",
+                Language = "C#"
+            };
+            Exercise forLoops = new Exercise
+            {
+                Name = "For Loops",
+                Language = "Javascript"
+            };
+            Exercise routing = new Exercise
+            {
+                Name = "Routing",
+                Language = "React"
+            };
+            Exercise interfaces = new Exercise
+            {
+                Name = "Interfaces",
+                Language = "C#"
+            };
         }
     }
 }
