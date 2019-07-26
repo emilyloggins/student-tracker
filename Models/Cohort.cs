@@ -5,7 +5,7 @@ namespace student_tracker
 {
     class Cohort
     {
-        public string Name { get; set; }
+        public int Name { get; set; }
         public List<Student> Students { get; set; }
         public List<Instructor> Instructors { get; set; }
     }

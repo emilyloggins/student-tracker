@@ -26,6 +26,18 @@ namespace student_tracker
                 Name = "Interfaces",
                 Language = "C#"
             };
+            Cohort twentyNine = new Cohort
+            {
+                Name = 29
+            };
+            Cohort thirtyOne = new Cohort
+            {
+                Name = 31
+            };
+            Cohort thirtyTwo = new Cohort
+            {
+                Name = 32
+            };
         }
     }
 }
