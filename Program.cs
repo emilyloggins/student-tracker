@@ -60,6 +60,30 @@ namespace student_tracker
                 SlackHandle = "hcleland",
                 Cohort = 32
             };
+            Instructor instructorOne = new Instructor
+            {
+                FirstName = "Brenda",
+                LastName = "Long",
+                SlackHandle = "blong",
+                Cohort = 34,
+                Specialty = "Lollipops"
+            };
+            Instructor instructorTwo = new Instructor
+            {
+                FirstName = "Adam",
+                LastName = "Sheaffer",
+                SlackHandle = "aSheaffer",
+                Cohort = 32,
+                Specialty = "Hats"
+            };
+            Instructor instructorThree = new Instructor
+            {
+                FirstName = "Bryan",
+                LastName = "Nilsen",
+                SlackHandle = "bnilsen",
+                Cohort = 34,
+                Specialty = "High Fives"
+            };
 
             List<Student> students = new List<Student>();
             students.Add(studentOne);
@@ -71,6 +95,11 @@ namespace student_tracker
             exercises.Add(forLoops);
             exercises.Add(routing);
             exercises.Add(interfaces);
+
+            instructorOne.AssignExercise(forLoops, studentTwo);
+            instructorTwo.AssignExercise(dictionaries, studentThree);
+            instructorThree.AssignExercise(routing, studentOne);
+            instructorTwo.AssignExercise(interfaces, studentThree);
         }
     }
 }
