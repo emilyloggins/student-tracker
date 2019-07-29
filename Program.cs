@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace student_tracker
 {
@@ -38,6 +39,38 @@ namespace student_tracker
             {
                 Name = 32
             };
+            Student studentOne = new Student
+            {
+                FirstName = "Shelley",
+                LastName = "Arnold",
+                SlackHandle = "sarnold",
+                Cohort = 32
+            };
+            Student studentTwo = new Student
+            {
+                FirstName = "Emily",
+                LastName = "Loggins",
+                SlackHandle = "eloggins",
+                Cohort = 32
+            };
+            Student studentThree = new Student
+            {
+                FirstName = "Heather",
+                LastName = "Cleland",
+                SlackHandle = "hcleland",
+                Cohort = 32
+            };
+
+            List<Student> students = new List<Student>();
+            students.Add(studentOne);
+            students.Add(studentTwo);
+            students.Add(studentThree);
+
+            List<Exercise> exercises = new List<Exercise>();
+            exercises.Add(dictionaries);
+            exercises.Add(forLoops);
+            exercises.Add(routing);
+            exercises.Add(interfaces);
         }
     }
 }
