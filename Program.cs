@@ -155,6 +155,24 @@ namespace student_tracker
                 SlackHandle = "aloggins",
                 Cohort = 29
             };
+
+            students.Add(student4);
+            students.Add(student5);
+
+            IEnumerable<Student> StudentsWithoutAssignments =
+            from s in students
+            where s.Exercises.Count == 0
+            select s;
+
+            // Which student is working on the most exercises? Make sure one of your students has more exercises than the others.
+            IEnumerable<string> OverachievingStudent =
+            students.Where(student => student.Exercises.Count() == students.Max(s => s.Exercises.Count())).Select(student => student.FirstName);
+
+            Console.WriteLine($"Cohort 32:");
+            foreach (Student s in CohortThirtyTwoStudents)
+            {
+                Console.WriteLine($"{s.FirstName}");
+            }
         }
     }
 }
